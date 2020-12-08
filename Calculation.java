@@ -1,7 +1,7 @@
 package service;
 
 public class Calculation {
-    String[] baza = {"Zero", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV",
+    String[] romanNumbers = {"Zero", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV",
             "XVI", "XVII", "XVIII", "XIX", "XX", "XXI", "XXII", "XXIII", "XXIV", "XXV", "XXVI", "XXVII", "XXVIII", "XXIX", "XXX",
             "XXXI", "XXXII", "XXXIII", "XXXIV", "XXXV", "XXXVI", "XXXVII", "XXXVIII", "XXXIX", "XL", "XLI", "XLII", "XLIII", "XLIV","XLV",
             "XLVI", "XLVII", "XLVIII", "XLIX", "L", "LI", "LII", "LIII", "LIV", "LV", "LVI", "LVII", "LVIII", "LIX", "LX",
@@ -29,10 +29,10 @@ public class Calculation {
         int operand1 = 0;
         int operand2 = 0;
         for (int i = 1; i <= 10; i++) {
-            if (a.equals(baza[i])){
+            if (a.equals(romanNumbers[i])){
                 operand1 = i;
             }
-            if (b.equals(baza[i])){
+            if (b.equals(romanNumbers[i])){
                 operand2 = i;
             }
         }
@@ -52,7 +52,7 @@ public class Calculation {
 
     public String convertToRoman(int total) {
         String totalToRim = "";
-        totalToRim = baza[total];
+        totalToRim = romanNumbers[total];
         return totalToRim;
     }
 }
